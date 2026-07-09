@@ -1,0 +1,52 @@
+void reverse(vector<int> ans(){
+  int s = 0;
+  int e = ans.size() - 1;
+  while(s<e){
+    swap(ans[s++],ans[e--]);
+  }
+}
+
+vector<int> findArraySum(vector<int>&a, int n, vector<int>&b, int m) {
+	
+  int i = n - 1;
+  int j = m - 1;
+  int carry = 0;
+  
+  while(i>=0 && j>=0){ 
+  A[i] = val1;
+  B[j] = val2;
+  int sum = val1 + val2 + carry;
+  int carry = sum/10;
+  int sum = sum % 10;
+  nums.push_back(sum);
+  i--;
+  j--;
+}
+
+while(i >= 0){        //first case
+   A[i] = val1;
+  int sum = val1 + carry;
+  int carry = sum/10;
+  int sum = sum % 10;
+  nums.push_back(sum);
+  i--;
+}
+
+ while( j >= 0){       //SECOND case
+  B[j] = val2;
+  int sum =  val2 + carry;
+  int carry = sum/10;
+  int sum = sum % 10;
+  nums.push_back(sum);
+ 
+  j--;}
+
+  while(carry != 0){    //THIRD CASE
+    int sum = carry;
+    int carry = sum/10;
+    int sum = sum % 10;
+    nums.push_back(sum);
+
+  }
+  return reverse(nums);
+}
